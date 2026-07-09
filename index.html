@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>VN Criações</title>
+
+<style>
+
+html,body{
+    margin:0;
+    height:100%;
+    font-family:Arial,sans-serif;
+    background:#090909;
+    color:#fff;
+}
+
+body{
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top,#1d1d1d,#090909 65%);
+}
+
+body:before{
+
+    content:"";
+    position:fixed;
+    inset:0;
+
+    background:
+    repeating-linear-gradient(
+    -12deg,
+    transparent 0 20px,
+    rgba(201,163,75,.05) 21px,
+    transparent 22px),
+
+    radial-gradient(circle at 20% 20%,
+    rgba(201,163,75,.08),
+    transparent 35%),
+
+    radial-gradient(circle at 80% 80%,
+    rgba(201,163,75,.08),
+    transparent 35%);
+
+    animation:drift 18s linear infinite;
+
+}
+
+@keyframes drift{
+
+from{
+transform:translateY(0);
+}
+
+to{
+transform:translateY(-40px);
+}
+
+}
+
+.wrap{
+
+    position:relative;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    height:100%;
+
+}
+
+.card{
+
+    width:min(980px,92%);
+
+    padding:48px;
+
+    border:1px solid rgba(201,163,75,.25);
+
+    background:rgba(255,255,255,.04);
+
+    backdrop-filter:blur(12px);
+
+    border-radius:28px;
+
+    box-shadow:0 0 60px rgba(0,0,0,.5);
+
+}
+
+.logo{
+
+    display:block;
+
+    margin:auto;
+
+    width:220px;
+
+    filter:drop-shadow(0 0 25px rgba(201,163,75,.35));
+
+}
+
+h1{
+
+    text-align:center;
+
+    letter-spacing:8px;
+
+    font-weight:300;
+
+    margin:20px 0 10px;
+
+}
+
+p{
+
+    text-align:center;
+
+    color:#c9a34b;
+
+    letter-spacing:2px;
+
+}
+
+.btn{
+
+    display:inline-block;
+
+    margin:28px auto 36px;
+
+    padding:15px 34px;
+
+    border:1px solid #c9a34b;
+
+    border-radius:999px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+.grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,300px);
+
+    gap:18px;
+
+    justify-content:center;
+
+    width:fit-content;
+
+    margin:0 auto;
+
+}
+
+.item{
+
+    padding:18px;
+
+    border-radius:18px;
+
+    background:rgba(255,255,255,.03);
+
+    border:1px solid rgba(201,163,75,.18);
+
+    text-decoration:none;
+
+    color:#fff;
+
+    transition:.25s;
+
+}
+
+.item:hover{
+
+    transform:translateY(-5px);
+
+    border-color:#c9a34b;
+
+    box-shadow:0 0 24px rgba(201,163,75,.2);
+
+}
+
+small{
+
+    display:block;
+
+    color:#aaa;
+
+    margin-top:4px;
+
+}
+
+footer{
+
+    text-align:center;
+
+    margin-top:30px;
+
+    color:#777;
+
+}
+
+@media (max-width:700px){
+
+    .grid{
+
+        grid-template-columns:1fr;
+
+        width:100%;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div class="wrap">
+
+<div class="card">
+
+<img class="logo" src="logo.png" alt="VN Criações">
+<p>IMPRESSÃO 3D • PROTOTIPAGEM • DESIGN</p>
+
+<div style="text-align:center">
+
+<a class="btn" href="https://w.app/vn3d">
+Solicitar orçamento
+</a>
+
+</div>
+
+<div class="grid">
+
+<a class="item" href="https://w.app/vn3d">
+<strong>WhatsApp</strong>
+<small>Solicite um orçamento</small>
+</a>
+
+<a class="item" href="https://www.instagram.com/vncriacoes3d/">
+<strong>Instagram</strong>
+<small>Siga nossos projetos</small>
+</a>
+
+<a class="item" href="#">
+<strong>Facebook</strong>
+<small>Novidades</small>
+</a>
+
+<a class="item" href="#">
+<strong>Portfólio / Loja</strong>
+<small>Conheça nossos produtos</small>
+</a>
+
+<a class="item" href="#">
+<strong>Mercado Livre</strong>
+<small>Compre com segurança</small>
+</a>
+
+<a class="item" href="#">
+<strong>Shopee</strong>
+<small>Promoções</small>
+</a>
+
+</div>
+
+<footer>
+© VN Criações
+</footer>
+
+</div>
+
+</div>
+
+</body>
+</html>
