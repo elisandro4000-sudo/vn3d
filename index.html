@@ -2,22 +2,30 @@
 <html lang="pt-BR">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>VN CriaÃ§Ãµes</title>
+<title>VN Criações</title>
 
 <style>
 
-html,body{
+*{
     margin:0;
-    height:100%;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html,body{
+    width:100%;
+    min-height:100%;
     font-family:Arial,sans-serif;
     background:#090909;
     color:#fff;
 }
 
 body{
-    overflow:hidden;
+    overflow-x:hidden;
+    overflow-y:auto;
+
     background:
     radial-gradient(circle at top,#1d1d1d,#090909 65%);
 }
@@ -27,8 +35,10 @@ body:before{
     content:"";
     position:fixed;
     inset:0;
+    z-index:-1;
 
     background:
+
     repeating-linear-gradient(
     -12deg,
     transparent 0 20px,
@@ -68,13 +78,15 @@ transform:translateY(-40px);
     justify-content:center;
     align-items:center;
 
-    height:100%;
+    min-height:100vh;
+
+    padding:25px;
 
 }
 
 .card{
 
-    width:min(980px,92%);
+    width:min(980px,100%);
 
     padding:48px;
 
@@ -98,19 +110,9 @@ transform:translateY(-40px);
 
     width:220px;
 
+    max-width:100%;
+
     filter:drop-shadow(0 0 25px rgba(201,163,75,.35));
-
-}
-
-h1{
-
-    text-align:center;
-
-    letter-spacing:8px;
-
-    font-weight:300;
-
-    margin:20px 0 10px;
 
 }
 
@@ -121,6 +123,8 @@ p{
     color:#c9a34b;
 
     letter-spacing:2px;
+
+    margin-top:18px;
 
 }
 
@@ -139,6 +143,14 @@ p{
     color:#fff;
 
     text-decoration:none;
+
+    transition:.25s;
+
+}
+
+.btn:hover{
+
+    background:rgba(201,163,75,.08);
 
 }
 
@@ -206,13 +218,79 @@ footer{
 
 }
 
+/* ========================= */
+/* RESPONSIVO */
+/* ========================= */
+
 @media (max-width:700px){
+
+    .wrap{
+
+        align-items:flex-start;
+
+        padding:18px;
+
+    }
+
+    .card{
+
+        padding:24px;
+
+        border-radius:20px;
+
+    }
+
+    .logo{
+
+        width:160px;
+
+    }
+
+    p{
+
+        font-size:14px;
+
+        letter-spacing:1px;
+
+        line-height:1.5;
+
+        margin-top:15px;
+
+    }
+
+    .btn{
+
+        display:block;
+
+        width:100%;
+
+        text-align:center;
+
+        margin:24px 0 30px;
+
+    }
 
     .grid{
 
         grid-template-columns:1fr;
 
         width:100%;
+
+        gap:14px;
+
+    }
+
+    .item{
+
+        padding:16px;
+
+    }
+
+    footer{
+
+        margin-top:20px;
+
+        font-size:13px;
 
     }
 
@@ -228,13 +306,14 @@ footer{
 
 <div class="card">
 
-<img class="logo" src="logo.png" alt="VN CriaÃ§Ãµes">
-<p>IMPRESSÃƒO 3D â€¢ PROTOTIPAGEM â€¢ DESIGN</p>
+<img class="logo" src="logo.png" alt="VN Criações">
+
+<p>IMPRESSÃO 3D • PROTOTIPAGEM • DESIGN</p>
 
 <div style="text-align:center">
 
 <a class="btn" href="https://w.app/vn3d">
-Solicitar orÃ§amento
+Solicitar orçamento
 </a>
 
 </div>
@@ -243,7 +322,7 @@ Solicitar orÃ§amento
 
 <a class="item" href="https://w.app/vn3d">
 <strong>WhatsApp</strong>
-<small>Solicite um orÃ§amento</small>
+<small>Solicite um orçamento</small>
 </a>
 
 <a class="item" href="https://www.instagram.com/vncriacoes3d/">
@@ -257,24 +336,24 @@ Solicitar orÃ§amento
 </a>
 
 <a class="item" href="#">
-<strong>PortfÃ³lio / Loja</strong>
-<small>ConheÃ§a nossos produtos</small>
+<strong>Portfólio / Loja</strong>
+<small>Conheça nossos produtos</small>
 </a>
 
 <a class="item" href="#">
 <strong>Mercado Livre</strong>
-<small>Compre com seguranÃ§a</small>
+<small>Compre com segurança</small>
 </a>
 
 <a class="item" href="#">
 <strong>Shopee</strong>
-<small>PromoÃ§Ãµes</small>
+<small>Promoções</small>
 </a>
 
 </div>
 
 <footer>
-Â© VN CriaÃ§Ãµes
+© VN Criações
 </footer>
 
 </div>
